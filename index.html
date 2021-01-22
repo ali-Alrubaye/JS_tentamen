@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>JS Tentamen</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lånekalkylator</h1>
+        <div class="calc_main">
+            <div class="div_sum">
+                <label for="amount">Summa:</label>
+                <span>0</span>
+                <input value="60000" type="range" min="0" max="500000" step="10000" class="sum_range">
+                <span>500 000</span>
+                <input value="60000" type="number" min="0" max="500000" step="10000" class="sum_text_range">
+            </div>
+            <div class="div_period">
+                <label for="amount">Återbetalningsperiod, år:</label>
+                <span>1</span>
+                <input value="2" type="range" min="1" max="12" step="1" class="period_range">
+                <span>12</span>
+                <input value="2" type="number" min="1" max="12" step="1" class="period_text_range">
+            </div>
+            <div class="div_interest">
+                <span>Årsränta:</span>
+                <span id="interest">5.4</span>%
+            </div>
+        </div>
+        <div class="costs_main">
+            <h3>Dina kostnader</h3>
+            <div>
+                <span>Kostnad per månad:</span>
+                <span id="per_month"></span>
+            </div>
+            <div>
+                <span>Antal avbetalningar:</span>
+                <span id="total_month"></span>
+            </div>
+            <div>
+                <span>Total räntekostnad:</span>
+                <span id="total_interest"></span>
+            </div>
+            <div>
+                <span>Total kostnad:</span>
+                <span id="total_kost"></span>
+            </div>
+            <div class="am_co-box">
+                <div class="am_co-name">Amortering vs ränta</div>
+                <div class="am_co-progress">
+                    <span class="amortization" data-progress="80%"></span>
+                    <span class="interest"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

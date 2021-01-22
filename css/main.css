@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+}
+
+.calc_main {
+    width: 100%;
+    background-color: #EEE;
+    padding: .5rem;
+    margin-bottom: 5px;
+}
+.calc_main div {
+    padding: .5rem;
+    margin-bottom: 5px;
+}
+.costs_main {
+    width: 100%;
+    background-color: #EEE;
+    padding: .5rem;
+}
+.costs_main div{
+    padding: .5rem;
+    margin-bottom: 5px;
+}
+
+
+
+
+/**/
+ .am_co-box {
+    background-color: rgba(221, 221, 221, .6);
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+ .am_co-box .am_co-name {
+    font-weight: bold;
+    width: 240px;
+    text-align: center;
+    line-height: 30px;
+}
+
+ .am_co-box .am_co-progress {
+    height: 30px;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+ .am_co-box .am_co-progress .amortization {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(40, 40, 236, .7);
+    transition: all .5s;
+    padding: .5rem;
+    font-weight: bold;
+    color: #FFF;
+}
+ .am_co-box .am_co-progress .interest {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    transition: all .5s;
+    padding: .5rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+
+/* Start Grid System */
+
+@media (min-width: 576px) {
+    /* Small Devices => Landscape Phones */
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Medium Devices => Tablets */
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Desktops */
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Large Screens */
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+/* End Grid System */
